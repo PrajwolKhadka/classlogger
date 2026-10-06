@@ -38,8 +38,9 @@ bower_components
 build/Release
 
 # Dependency directories
-node_modules/
+*/node_modules/
 jspm_packages/
+*.env
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -147,3 +148,16 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+.env
+.env.local
+.env.*.local
+node_modules
+.next
+dist
+*.tsbuildinfo
+next-env.d.ts
+
+# keep the example files so others know which variables exist
+!.env.example
+!.env.local.example
